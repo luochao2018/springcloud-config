@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          password: luochao0626
+          searchPaths: config
+          uri: https://github.com/luochao2018/springcloud-config/
+          username: luochao2018
