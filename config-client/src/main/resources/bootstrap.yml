@@ -8,3 +8,13 @@ spring:
       label: master
       profile: dev
       uri: http://localhost:8888/
+      discovery:
+        service-id: config-server
+        enabled: true
+
+  #访问http://localhost:8881/hi
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8889/eureka/

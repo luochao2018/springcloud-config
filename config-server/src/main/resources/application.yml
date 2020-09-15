@@ -12,3 +12,10 @@ spring:
           searchPaths: config
           uri: https://github.com/luochao2018/springcloud-config/
           username: luochao2018
+          #http://localhost:8888/config-client/dev/master
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8889/eureka/
+
