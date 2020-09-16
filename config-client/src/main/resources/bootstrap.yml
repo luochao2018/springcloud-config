@@ -18,3 +18,11 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8889/eureka/
+
+management:
+  security:
+    enabled: false #用于解决get方式提交被拒绝
+  endpoints:
+    web:
+      exposure:
+        include=*:
